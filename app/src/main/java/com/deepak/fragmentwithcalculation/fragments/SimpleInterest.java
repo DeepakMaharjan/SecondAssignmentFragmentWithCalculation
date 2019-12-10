@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,6 +49,23 @@ public class SimpleInterest extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
+
+        if (TextUtils.isEmpty(etPrinciple.getText()))
+        {
+            etPrinciple.setError("Please enter principal..");
+            return;
+        }
+        else if (TextUtils.isEmpty(etTime.getText())){
+            etTime.setError("Please enter time..");
+            return;
+        }
+        else if (TextUtils.isEmpty(etRate.getText()))
+        {
+            etRate.setError("Please enter rate..");
+            return;
+        }
+
+
         float principle, time, rate, result;
 
         principle = Float.parseFloat(etPrinciple.getText().toString());

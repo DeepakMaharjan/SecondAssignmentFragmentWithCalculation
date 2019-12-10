@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,6 +46,13 @@ public class Circle extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
+
+        if (TextUtils.isEmpty(etCircleRadius.getText()))
+        {
+            etCircleRadius.setError("Please enter radius.");
+            return;
+        }
+
         float radius, result;
 
         radius = Float.parseFloat(etCircleRadius.getText().toString());

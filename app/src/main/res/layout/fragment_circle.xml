@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
-    android:background="#FF0000"
+    android:background="#DB0505"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".fragments.Circle">

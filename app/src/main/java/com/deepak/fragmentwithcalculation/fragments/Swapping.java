@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,6 +46,16 @@ public class Swapping extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+
+        if (TextUtils.isEmpty(etFirstNumber.getText()))
+        {
+            etFirstNumber.setError("Please enter first number..");
+            return;
+        }
+        else if (TextUtils.isEmpty(etSecondNumber.getText())){
+            etSecondNumber.setError("Please enter second number..");
+            return;
+        }
 
         int first,second,temp, bFirst, bSecond;
 

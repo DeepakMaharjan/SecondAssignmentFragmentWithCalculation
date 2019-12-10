@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#795959"
     tools:context=".MainActivity">
 
 
@@ -14,7 +15,8 @@
         android:layout_marginTop="16dp"
         android:text="Scientific Calculator"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="30sp"
+        android:textColor="#000"
         android:textStyle="bold|italic"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />

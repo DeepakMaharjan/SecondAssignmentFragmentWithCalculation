@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,6 +45,13 @@ public class Automorphic extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
+
+        if (TextUtils.isEmpty(etAutomorphicNumber.getText()))
+        {
+            etAutomorphicNumber.setError("Please enter any number.");
+            return;
+        }
+
         int number = Integer.parseInt(etAutomorphicNumber.getText().toString());
         int sq = number * number;
 
