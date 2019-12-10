@@ -69,6 +69,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 fragmentTransaction.replace(R.id.fragmentContainer, armstrong);
                 fragmentTransaction.commit();
                 break;
+
+
         }
 
 
