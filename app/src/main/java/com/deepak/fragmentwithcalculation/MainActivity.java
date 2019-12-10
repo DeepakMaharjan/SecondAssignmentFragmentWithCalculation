@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.deepak.fragmentwithcalculation.fragments.Armstrong;
+import com.deepak.fragmentwithcalculation.fragments.Automorphic;
 import com.deepak.fragmentwithcalculation.fragments.Circle;
 import com.deepak.fragmentwithcalculation.fragments.Palindrome;
 import com.deepak.fragmentwithcalculation.fragments.SimpleInterest;
@@ -67,6 +68,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnArmstrong:
                 Armstrong armstrong = new Armstrong();
                 fragmentTransaction.replace(R.id.fragmentContainer, armstrong);
+                fragmentTransaction.commit();
+                break;
+
+            case R.id.btnAutomorphic:
+                Automorphic automorphic = new Automorphic();
+                fragmentTransaction.replace(R.id.fragmentContainer, automorphic);
                 fragmentTransaction.commit();
                 break;
 
