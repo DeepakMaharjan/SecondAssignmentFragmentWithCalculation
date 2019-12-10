@@ -8,8 +8,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.deepak.fragmentwithcalculation.fragments.Armstrong;
 import com.deepak.fragmentwithcalculation.fragments.Circle;
 import com.deepak.fragmentwithcalculation.fragments.Palindrome;
+import com.deepak.fragmentwithcalculation.fragments.SimpleInterest;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -56,7 +58,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 fragmentTransaction.commit();
                 break;
 
+            case R.id.btnSI:
+                SimpleInterest simpleInterest = new SimpleInterest();
+                fragmentTransaction.replace(R.id.fragmentContainer, simpleInterest);
+                fragmentTransaction.commit();
+                break;
 
+            case R.id.btnArmstrong:
+                Armstrong armstrong = new Armstrong();
+                fragmentTransaction.replace(R.id.fragmentContainer, armstrong);
+                fragmentTransaction.commit();
+                break;
         }
 
 
