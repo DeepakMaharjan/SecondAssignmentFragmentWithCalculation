@@ -69,7 +69,7 @@ public class Automorphic extends Fragment implements View.OnClickListener{
             tvAutomorphicResult.append(number +" is a automorphic number.\n");
         }
         else {
-            tvAutomorphicResult.append(number + "is not an automorphic number.\n");
+            tvAutomorphicResult.append(number + " is not an automorphic number.\n");
         }
     }
 }
